@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -33,6 +34,21 @@ public class HomeActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
+    }
+
+    public void bulletin(View view) {
+        Intent intent = new Intent(this, Bulletin.class);
+        startActivity(intent);
+    }
+
+    public void calendar(View view) {
+        Intent intent = new Intent(this, Calendar.class);
+        startActivity(intent);
+    }
+
+    public void messages(View view) {
+        Intent intent = new Intent(this, Messages.class);
+        startActivity(intent);
     }
 
     @Override
