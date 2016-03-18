@@ -85,6 +85,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="softeng.apartmentapp.Messages" />
         </activity>
+        <activity
+            android:name=".ViewEvent"
+            android:label="@string/title_activity_view_event"
+            android:parentActivityName=".Day"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="softeng.apartmentapp.Day" />
+        </activity>
     </application>
 
 </manifest>
