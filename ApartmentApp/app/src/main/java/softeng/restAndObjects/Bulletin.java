@@ -1,6 +1,6 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
-class Bulletin implements DTOBase {
+public class Bulletin implements DTOBase {
 	public String sender, subject, content;
 	public int timestamp;
 	

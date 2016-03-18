@@ -1,6 +1,6 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
-class Message implements DTOBase {
+public class Message implements DTOBase {
 	public String sender, recipient, content;
 	public int urgency, timestamp;
 	public boolean read;

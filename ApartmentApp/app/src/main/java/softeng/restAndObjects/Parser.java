@@ -1,4 +1,4 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class Parser {
 	
 	public Parser(String toParse, Class<?> type) {
 		this.gson = new Gson();
-		this.response = gson.fromJson(toParse, type);
+		this.response = (DefaultResponse) gson.fromJson(toParse, type);
 	}
 	
 	public boolean isSuccessful() {

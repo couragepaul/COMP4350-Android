@@ -1,4 +1,4 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -136,8 +136,6 @@ public class RestInterface {
 		return new Parser(response, SendEventResponse.class).isSuccessful();
 	}
 	
-	public static void main(String[] args) {		
-		RestInterface.getMessages("test");
-		RestInterface.sendMessage(new Message("umm","umm","umm",1,1,false));
+	public static void main(String[] args) {
 	}
 }

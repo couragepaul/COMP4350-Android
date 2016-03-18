@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="softeng.apartmentapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bulletin"
+            android:name=".Bulletins"
             android:label="@string/title_activity_bulletin"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -55,6 +57,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="softeng.apartmentapp.Calendar" />
+        </activity>
+        <activity
+            android:name=".ViewBulletin"
+            android:label="@string/title_activity_view_bulletin"
+            android:parentActivityName=".Bulletins"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="softeng.apartmentapp.Bulletins" />
         </activity>
     </application>
 
