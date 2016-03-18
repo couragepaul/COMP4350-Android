@@ -31,7 +31,9 @@
         android:id="@+id/submitButton"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="sendMessageButton" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -62,11 +64,12 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/urgency"
-        android:text="Urgency"
+        android:text="10"
         android:layout_alignTop="@+id/username"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_toRightOf="@+id/username"
-        android:layout_toEndOf="@+id/username" />
+        android:layout_toEndOf="@+id/username"
+        android:textIsSelectable="false" />
 
 </RelativeLayout>

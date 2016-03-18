@@ -1,4 +1,4 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
 public interface DTOBase {
 	

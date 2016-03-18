@@ -1,4 +1,4 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
 import java.io.IOException;
 import java.util.ArrayList;

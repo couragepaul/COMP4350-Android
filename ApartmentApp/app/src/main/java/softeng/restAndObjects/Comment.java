@@ -1,4 +1,4 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
 class Comment implements DTOBase {
 	public String sender, content, bulletin_reference;
