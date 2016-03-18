@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="New Event"
         android:id="@+id/button4"
-        android:onClick="addBulletin"
+        android:onClick="addEvent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

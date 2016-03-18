@@ -1,6 +1,6 @@
 package softeng.restAndObjects;
 
-class Event implements DTOBase {
+public class Event implements DTOBase {
     public String sender, content, title;
     public int timestamp, starttime, endtime;
 

@@ -8,4 +8,5 @@
     <string name="title_activity_view_bulletin">ViewBulletin</string>
     <string name="title_activity_create_message">CreateMessage</string>
     <string name="title_activity_view_message">ViewMessage</string>
+    <string name="title_activity_view_event">ViewEvent</string>
 </resources>

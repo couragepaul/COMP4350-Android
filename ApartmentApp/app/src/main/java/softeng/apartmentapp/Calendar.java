@@ -1,5 +1,6 @@
 package softeng.apartmentapp;
 
+import android.app.usage.UsageEvents;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -27,13 +28,21 @@ public class Calendar extends AppCompatActivity {
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(CalendarView calendarView, int day, int month, int year) {
-                openDay();
+                openDay(day, month, year);
             }
         });
     }
 
-    public void openDay() {
+    public void openDay(int day, int month, int year) {
         Intent intent = new Intent(this, Day.class);
+
+        Bundle extras = new Bundle();
+
+        extras.putInt("day", day);
+        extras.putInt("month", month);
+        extras.putInt("year", year);
+        intent.putExtras(extras);
+
         startActivity(intent);
     }
 
