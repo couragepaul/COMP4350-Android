@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bulletin"
+            android:name=".Bulletins"
             android:label="@string/title_activity_bulletin"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -59,6 +59,15 @@
                 android:value="softeng.apartmentapp.Calendar" />
         </activity>
         <activity
+<<<<<<< HEAD
+            android:name=".ViewBulletin"
+            android:label="@string/title_activity_view_bulletin"
+            android:parentActivityName=".Bulletins"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="softeng.apartmentapp.Bulletins" />
+=======
             android:name=".CreateMessage"
             android:label="@string/title_activity_create_message"
             android:parentActivityName=".Messages"
@@ -75,6 +84,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="softeng.apartmentapp.Messages" />
+>>>>>>> refs/remotes/origin/master
         </activity>
     </application>
 

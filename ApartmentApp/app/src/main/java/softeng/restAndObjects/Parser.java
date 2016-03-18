@@ -11,7 +11,11 @@ public class Parser {
 	
 	public Parser(String toParse, Class<?> type) {
 		this.gson = new Gson();
+<<<<<<< HEAD
+		this.response = (DefaultResponse) gson.fromJson(toParse, type);
+=======
 		this.response = (DefaultResponse) gson.fromJson(toParse, type); //this.response = gson.fromJson(toParse, type);
+>>>>>>> refs/remotes/origin/master
 	}
 	
 	public boolean isSuccessful() {
