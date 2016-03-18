@@ -42,16 +42,15 @@ public class CreateMessage extends AppCompatActivity {
         String sender = "Test_User";
         String recipient = ((EditText)findViewById(R.id.username)).toString();
         String content = ((EditText)findViewById(R.id.newMessage)).toString();
-        int urgency = Integer.parseInt(findViewById(R.id.urgency).toString());
-        if(urgency > 10) {
-            urgency = 10;
-        }
+//        int urgency = Integer.parseInt(((EditText) findViewById(R.id.urgency)).toString());
+//        if(urgency > 10) {
+//            urgency = 10;
+//        }
 //        Message theNewMessage = new Message(sender,recipient,content,urgency,1,false);
         Message theNewMessage = new Message("Test User","Comp4350_SU","msg",10,1,false);
         sendMessage(theNewMessage);
 
         //go back to messages page
-//        Intent intent = new Intent(this, Messages.class);
-//        startActivity(intent);
+        finish();
     }
 }
