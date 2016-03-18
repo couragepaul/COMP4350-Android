@@ -5,10 +5,7 @@
     <string name="title_activity_messages">Messages</string>
     <string name="title_activity_calendar">Calendar</string>
     <string name="title_activity_day">Day</string>
-<<<<<<< HEAD
     <string name="title_activity_view_bulletin">ViewBulletin</string>
-=======
     <string name="title_activity_create_message">CreateMessage</string>
     <string name="title_activity_view_message">ViewMessage</string>
->>>>>>> refs/remotes/origin/master
 </resources>
