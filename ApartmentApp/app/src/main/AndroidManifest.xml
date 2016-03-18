@@ -59,7 +59,6 @@
                 android:value="softeng.apartmentapp.Calendar" />
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".ViewBulletin"
             android:label="@string/title_activity_view_bulletin"
             android:parentActivityName=".Bulletins"
@@ -67,7 +66,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="softeng.apartmentapp.Bulletins" />
-=======
+        </activity>
+        <activity
             android:name=".CreateMessage"
             android:label="@string/title_activity_create_message"
             android:parentActivityName=".Messages"
@@ -84,7 +84,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="softeng.apartmentapp.Messages" />
->>>>>>> refs/remotes/origin/master
         </activity>
     </application>
 
