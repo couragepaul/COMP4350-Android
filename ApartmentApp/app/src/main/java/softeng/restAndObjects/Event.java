@@ -1,4 +1,4 @@
-package me.jdasilva.test;
+package softeng.restAndObjects;
 
 class Event implements DTOBase {
     public String sender, content, title;

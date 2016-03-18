@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="softeng.apartmentapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -55,6 +57,24 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="softeng.apartmentapp.Calendar" />
+        </activity>
+        <activity
+            android:name=".CreateMessage"
+            android:label="@string/title_activity_create_message"
+            android:parentActivityName=".Messages"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="softeng.apartmentapp.Messages" />
+        </activity>
+        <activity
+            android:name=".ViewMessage"
+            android:label="@string/title_activity_view_message"
+            android:parentActivityName=".Messages"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="softeng.apartmentapp.Messages" />
         </activity>
     </application>
 
